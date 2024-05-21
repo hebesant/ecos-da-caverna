@@ -18,12 +18,22 @@ public class Utils {
                 e.printStackTrace();
             }
         }
+        System.out.println();
     }
 
-    public static void divisoria(int tamanho){
+    public static void divider(int tamanho){
         for(int i = 0 ; i < tamanho; i++){
             System.out.print("-");
         }
         System.out.println();
+    }
+
+    public static void waitInput(){
+        System.out.print("Pressione qualquer tecla para continuar...\n");
+        try {
+            System.in.read();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

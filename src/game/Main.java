@@ -1,7 +1,6 @@
 package game;
 import java.util.*;
 
-import gamesettings.*;
 import system.*;
 import story.*;
 
@@ -9,9 +8,19 @@ import story.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Utils.printSlowly(Cave.introduction());
-        ChoiceManager.aguardarTecla();
+        Utils.printSlowly(InitialRoom.introduction());
+        Utils.waitInput();
         Utils.clear();
+
+        Player Player = new Player();
+
+        Menu Menu = new Menu(Player);
+
+        Menu.mainMenu();
+
+
+
+
 
 
 
