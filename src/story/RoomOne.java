@@ -1,14 +1,19 @@
 package story;
 
-public class InitialRoom {
+import system.Utils;
 
-    public static String introduction(){
+public class RoomOne {
+
+    public static void introduction(){
         String introduction = ("""
             Você sente a água fria pingando em seu rosto. Seus olhos se abrem lentamente,
             confrontando uma escuridão densa e opressiva. Seus pensamentos são turvos,
             suas lembranças uma névoa distante. Onde estou? Quem sou eu?
             """);
-        return introduction;
+        Utils.printSlowly(introduction);
     }
 
+    public static void continuar(){
+        System.out.println("Olá");
+    }
 }
