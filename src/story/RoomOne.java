@@ -13,7 +13,4 @@ public class RoomOne {
         Utils.printSlowly(introduction);
     }
 
-    public static void continuar(){
-        System.out.println("Olá");
-    }
 }

@@ -8,7 +8,7 @@ import story.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Utils.printSlowly(InitialRoom.introduction());
+        RoomOne.introduction();
         Utils.waitInput();
         Utils.clear();
 

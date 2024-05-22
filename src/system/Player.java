@@ -13,12 +13,13 @@ public class Player {
     }
 
     public void printPlayer(){
+        Utils.clear();
         Utils.divider(20);
         System.out.println("PERSONAGEM");
         Utils.divider(20);
         System.out.println("Nome: Desconhecido.");
         System.out.println("HP: " + this.getHP());
-        System.out.println();
+        Utils.divider(20);
 
         System.out.println("(1) Voltar para o Menu");
     }
