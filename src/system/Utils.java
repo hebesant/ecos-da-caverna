@@ -6,6 +6,14 @@ public class Utils {
     public static void clear(){
         System.out.print("\033[H\033[2J");
         System.out.flush();
+
+
+        for (int i = 0; i < 50; i++) {
+            System.out.println();
+        }
+
+        //O primeiro comando funciona apenas em terminais unix, estou exibindo linhas brancas
+        //apenas para facilitar a visualização do desenvolvimento no console do Intellij.
     }
 
     public static void printSlowly(String text) {
@@ -29,7 +37,15 @@ public class Utils {
     }
 
     public static void waitInput(){
-        System.out.print("Pressione qualquer tecla para continuar...\n");
+        try {
+            System.in.read();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void waitInput(String phrase){
+        System.out.print(phrase + "\n");
         try {
             System.in.read();
         } catch (Exception e) {
