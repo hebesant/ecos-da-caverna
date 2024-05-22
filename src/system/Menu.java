@@ -14,7 +14,7 @@ public class Menu {
         System.out.println("MENU");
         System.out.println("Qual sua próxima ação?");
         Utils.divider(20);
-        System.out.println("(1) Continuar explorando");
+        System.out.println("(1) Avançar");
         System.out.println("(2) Informações do personagem");
         System.out.println("(3) Encerrar o jogo");
 
