@@ -1,6 +1,5 @@
 package system;
 import gamesettings.*;
-import story.RoomOne;
 
 public class Menu {
 
@@ -21,7 +20,7 @@ public class Menu {
 
         ChoiceManager.choiceInt(
                 () -> {
-                    //
+
                 },
                 () -> {
                     this.statusPlayer();// Exibe informações do jogador

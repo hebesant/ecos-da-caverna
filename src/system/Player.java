@@ -1,16 +1,15 @@
 package system;
 
-public class Player {
+public class Player extends Character {
 
     int HP;
 
-    public Player(){
-        this.HP = 100;
+    public Player(String nome, int HP){
+        super(nome, HP);
+
     }
 
-    public int getHP(){
-        return this.HP;
-    }
+
 
     public void printPlayer(){
         Utils.clear();

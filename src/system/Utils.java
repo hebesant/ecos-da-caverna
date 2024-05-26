@@ -26,7 +26,6 @@ public class Utils {
                 e.printStackTrace();
             }
         }
-        System.out.println();
     }
 
     public static void divider(int tamanho){
