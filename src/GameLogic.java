@@ -6,9 +6,9 @@ public class GameLogic {
     static Player player;
     public static boolean isRunning;
     public static String[] encounters = {"Battle", "Battle", "Battle", "Rest", "Rest"};
-    public static String[] enemies = {"Ogre", "Ogre", "Goblin", "Goblin", "Stone Elemental"};
+    public static String[] enemies = {"Rato de Caverna", "Rato de Caverna", "Morcego de Caverna", "Besouro de Pedra", "Fungo Venenoso"};
     public static int place = 0, act = 1;
-    public static String[] places = {"Everlasting Mountains", "Haunted Lanlines", "Castle of the Evil Emperor", "Throne Room"};
+    public static String[] places = {"Entrada Sombria", "Galeria Ecoante", "Castle of the Evil Emperor", "Throne Room"};
 
     //metodo para iniciar o jogo
     public static void startGame(){
@@ -59,11 +59,11 @@ public class GameLogic {
             player.chooseTrait();
             //Story.secondActintro();
             //novos valores para inimigos
-            enemies[0] = "Evil Mercenary";
-            enemies[1] = "Goblin";
-            enemies[2] = "Wolvepack";
-            enemies[3] = "Henchman of the Evil Emperor";
-            enemies[4] = "Scary Stranger";
+            enemies[0] = "Sapo da Umidade";
+            enemies[1] = "Sapo da Umidade";
+            enemies[2] = "Gosma Pegajosa";
+            enemies[3] = "Cobra de Cristal";
+            enemies[4] = "Duende de Pedra";
             //novos valores para encontros
             encounters[0] = "Battle";
             encounters[1] = "Battle";
@@ -78,11 +78,11 @@ public class GameLogic {
             //Story.printSecondAct();
             player.chooseTrait();
             //Story.thirdActIntro;
-            enemies[0] = "Evil Mercenary";
-            enemies[1] = "Evil Mercenary";
-            enemies[2] = "Henchman of the Evil Emperor";
-            enemies[3] = "Henchman of the Evil Emperor";
-            enemies[4] = "Henchman of the Evil Emperor";
+            enemies[0] = "Aranha Sombria";
+            enemies[1] = "Aranha Sombria";
+            enemies[2] = "Esqueleto Reanimado";
+            enemies[3] = "Troll de Caverna";
+            enemies[4] = "Elemental de Terra";
             //novos valores para encontros
             encounters[0] = "Battle";
             encounters[1] = "Battle";
@@ -99,7 +99,7 @@ public class GameLogic {
             //Story.fourthActIntro
             player.hp = player.maxHP;
             //ultima batalha
-            //finalBattle();
+            finalBattle();
         }
     }
 
@@ -332,7 +332,7 @@ public class GameLogic {
     //batalha final
     public static void finalBattle(){
         //criando o bichao
-        battle(new Enemy("O PICA", 300));
+        battle(new Enemy("Gólem das Profundezas", 300));
         //Story.printEnd(Player);
         isRunning = false;
     }
