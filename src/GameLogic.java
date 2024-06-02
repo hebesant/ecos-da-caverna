@@ -17,8 +17,8 @@ public class GameLogic {
         Util.clearConsole();
         Util.printSeparator(40);
         Util.printSeparator(30);
-        System.out.println("ERA DO IMPERADOR DO MAL");
-        System.out.println("RPG FEITO POR");
+        System.out.println("ECOS DA CAVERNA");
+        System.out.println("BY...");
         Util.printSeparator(30);
         Util.printSeparator(40);
         Util.anythingToContinue();
@@ -57,7 +57,7 @@ public class GameLogic {
             place = 1;
             Story.firsAct();
             player.chooseTrait();
-            //Story.secondActintro();
+            Story.secondAct();
             //novos valores para inimigos
             enemies[0] = "Sapo da Umidade";
             enemies[1] = "Sapo da Umidade";
@@ -75,9 +75,8 @@ public class GameLogic {
         }else if(player.xp >= 50 &&  act == 2){
             act = 3;
             place = 2;
-            //Story.printSecondAct();
             player.chooseTrait();
-            //Story.thirdActIntro;
+            Story.thirdAct();
             enemies[0] = "Aranha Sombria";
             enemies[1] = "Aranha Sombria";
             enemies[2] = "Esqueleto Reanimado";
@@ -94,9 +93,8 @@ public class GameLogic {
         }else if(player.xp >= 100 && act  == 3){
             act = 4;
             place = 3;
-            //Story.thirdAct;
             player.chooseTrait();
-            //Story.fourthActIntro
+            Story.fourthAct();
             player.hp = player.maxHP;
             //ultima batalha
             finalBattle();
@@ -333,7 +331,7 @@ public class GameLogic {
     public static void finalBattle(){
         //criando o bichao
         battle(new Enemy("Gólem das Profundezas", 300));
-        //Story.printEnd(Player);
+        Story.end(player);
         isRunning = false;
     }
 
