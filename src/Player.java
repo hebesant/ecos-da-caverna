@@ -9,8 +9,8 @@ public class Player extends Character {
     int gold, restsLeft, pots;
 
     //nomes fodas dos tracos
-    public String[] atkUpgrades = {"Strenght", "Power", "Might", "Godlike Strenght"};
-    public String[] defUpgrades = {"Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura"};
+    public String[] atkUpgrades = {"Força", "Fúria", "Vigor", "Força Divina"};
+    public String[] defUpgrades = {"Resistência", "Pele Dura", "Couraça Escamada", "Aura Sagrada"};
 
     public Player(String name){
         super(name, 100, 0);

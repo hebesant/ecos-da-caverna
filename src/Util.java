@@ -19,7 +19,7 @@ public class Util {
 
     //printar o texto lento
     public static void printSlowly(String text) {
-        int delay = 15;
+        int delay = 30;
         for (int i = 0; i < text.length(); i++) {
             System.out.print(text.charAt(i));
             try {
