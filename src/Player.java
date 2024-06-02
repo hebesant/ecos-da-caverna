@@ -1,4 +1,4 @@
-package net.rpg.main;
+
 
 public class Player extends Character {
 
@@ -35,20 +35,20 @@ public class Player extends Character {
     }
 
     public void chooseTrait(){
-        GameLogic.clearConsole();
-        GameLogic.printHeading("Escolha um traço: ");
+        Util.clearConsole();
+        Util.printHeading("Escolha um traço: ");
         System.out.println("(1) " + atkUpgrades[numAtkUpgrades]);
         System.out.println("(2) " + defUpgrades[numDefUpgrades]);
         //escolha do jogador
-        int input = GameLogic.readInt("-> ", 2);
-        GameLogic.clearConsole();
+        int input = Util.readInt("-> ", 2);
+        Util.clearConsole();
         if(input == 1){
-            GameLogic.printHeading("Você escolheu " + atkUpgrades[numAtkUpgrades]);
+            Util.printHeading("Você escolheu " + atkUpgrades[numAtkUpgrades]);
             numAtkUpgrades++;
         }else {
-            GameLogic.printHeading("Você escolheu " + defUpgrades[numDefUpgrades]);
+            Util.printHeading("Você escolheu " + defUpgrades[numDefUpgrades]);
             numDefUpgrades++;
         }
-        GameLogic.anythingToContinue();
+        Util.anythingToContinue();
     }
 }
