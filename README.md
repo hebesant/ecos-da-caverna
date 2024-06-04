@@ -1,6 +1,6 @@
 # 🎮 RPG Ecos da Caverna 🕯️
 
-Bem-vindo ao RPG Eco da Caverna! Uma pequena aventura no terminal!
+Bem-vindo ao RPG Ecos da Caverna! Uma pequena aventura no terminal!
 
 ## ℹ️ Sobre o Jogo
 

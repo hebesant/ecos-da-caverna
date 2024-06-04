@@ -17,8 +17,14 @@ public class GameLogic {
         Util.clearConsole();
         Util.printSeparator(40);
         Util.printSeparator(30);
-        System.out.println("ECOS DA CAVERNA");
-        System.out.println("BY...");
+        System.out.println("""
+                  ______ _____ ____   _____   _____             _____     __      ________ _____  _   _         \s
+                 |  ____/ ____/ __ \\ / ____| |  __ \\   /\\      / ____|   /\\ \\    / /  ____|  __ \\| \\ | |   /\\   \s
+                 | |__ | |   | |  | | (___   | |  | | /  \\    | |       /  \\ \\  / /| |__  | |__) |  \\| |  /  \\  \s
+                 |  __|| |   | |  | |\\___ \\  | |  | |/ /\\ \\   | |      / /\\ \\ \\/ / |  __| |  _  /| . ` | / /\\ \\ \s
+                 | |___| |___| |__| |____) | | |__| / ____ \\  | |____ / ____ \\  /  | |____| | \\ \\| |\\  |/ ____ \\\s
+                 |______\\_____\\____/|_____/  |_____/_/    \\_\\  \\_____/_/    \\_\\/   |______|_|  \\_\\_| \\_/_/    \\_\\ 
+                """);
         Util.printSeparator(30);
         Util.printSeparator(40);
         Util.anythingToContinue();
@@ -255,7 +261,7 @@ public class GameLogic {
                     Util.clearConsole();
                     Util.printHeading("Você derrotou o " + enemy.name + "!");
                     player.xp += enemy.xp;
-                    System.out.println("Você aquiriu " + enemy.xp + " de XP!");
+                    System.out.println("Você adquiriu " + enemy.xp + " de XP!");
                     //drop aleatório
                     boolean addRest = (Math.random() * 5 + 1 <= 2.25);
                     int goldEarned = (int) (Math.random() * enemy.xp);
